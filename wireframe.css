@@ -1,0 +1,109 @@
+/* to keep total width the same will trying to place content */
+* {
+    box-sizing: border-box;
+}
+
+/* given parameters */
+body {
+   font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+   text-align: center;
+   color: #777;
+   background: #777;
+   width: 960px;
+   font-size: 18px; 
+   margin-left: 150px;
+}
+
+/* worked as desired at first, but i did something and the footer
+isnt responding correctly */
+.longBox {
+    background: #ebebeb;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* possible redundancy with ".midbox", font placement not quite
+right */
+.section {
+    background: #ebebeb;
+    width: 495px;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    float: left;
+}
+
+/* need to go over "positioning" so more on my own, clearly still 
+not getting it */
+.midBox {
+    clear: both;
+    position: relative;
+    height: 225px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    /* padding: 20px; */
+    margin-bottom: 20px;
+    text-align: center;
+    background: #eee;
+    overflow: auto;
+}
+
+/*
+.smBox {
+    position: relative;
+    padding: 15px;
+} */
+
+/* positioning still not right */
+.smlongBox {
+    margin: 0;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+/* font placement is off, reluctant to adjust padding thinking
+its necessary to adjust a different element */
+#article {
+    color: #ebebeb;
+    background: #777;
+    align-self: auto;
+    width: 98%;
+    margin: 0; 
+    position: absolute;
+    padding: 5px;
+    bottom: 5px;
+    /* margin-bottom: 5px; */
+    height: 150px;
+}
+
+/* positioning is off */
+h1, p {
+    color: #777;
+    background: #ebebeb;
+    padding: 10px;
+}
+
+.side1 {
+    width: 495px;
+    /* float: left; */
+}
+
+/* i got ".aside" placed where it needs to be for this assignment
+but dont believe its the method intended */
+.aside {
+    width: 460px;
+    color: #777;
+    background: #ebebeb;
+    position: relative;
+    left: 500px;
+    bottom: 245px;
+    /* float: right */
+}
+
+/* i had "footer" set good at one point, but now its too far to 
+the bottow and i have no idea why i lost width */
+footer {
+    float: left;
+}
